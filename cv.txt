@@ -1,1 +1,4 @@
 https://github.com/Aju100/resume.git
+https://www.latex-project.org/get/
+https://www.overleaf.com/latex/templates/ioe-thapathali-campus-minor-and-major-project-report-template/dvbmtzxxzptk
+https://github.com/jarp0l/project-report-template-latex

@@ -1,0 +1,46 @@
+\section{System Design and Methodology}
+
+\subsection{Project Development Life Cycle}
+
+\subsection{System Architecture}
+
+
+
+\newpage
+
+\subsection{Use Case Diagram}
+\subsubsection{Fully-Dressed Use Case}
+
+\begin{table}[H]
+    \centering
+    \caption{Fully-Dressed Use Case}
+    \label{tab:Fully-Dressed Use Case}
+    \resizebox{0.75\textwidth}{!}{
+        \begin{tabular}{|p{3.5cm}|p{7cm}|p{5cm}|}
+            \hline
+            \textbf{Aspect} & \textbf{Description} & \textbf{Implementation Details} \\ \hline
+
+            \multirow{3}{*}{\textbf{User}} & Large-scale sunflower farmers, agronomists, agricultural consultants, and crop monitoring agencies. & Users interact with a web-based platform or mobile app providing access to the disease identification system. \\ \hline
+            
+            \textbf{Problem} & Timely and accurate identification of various sunflower diseases to minimize yield losses and optimize disease management strategies. & Traditional methods are time-consuming, labor-intensive, and prone to error. The system automates this process, enhancing efficiency and accuracy. \\ \hline
+            
+            \textbf{Goal} & Develop a user-friendly system that rapidly analyzes sunflower leaf images, accurately classifies diseases, localizes affected areas, and provides actionable recommendations. & The system combines Inception-V2 and U-Net models to achieve accurate disease classification and precise lesion segmentation. \\ \hline
+            
+            \textbf{Data} & A large dataset of sunflower leaf images, labeled with disease types and severity levels (if applicable), captured under various lighting and environmental conditions. & Images are collected from diverse fields and sources to ensure model robustness. Data augmentation techniques (e.g., rotation, flipping) are applied to increase dataset diversity. \\ \hline
+            
+            \textbf{Input} & High-resolution images of sunflower leaves captured using smartphones, digital cameras, or drones. & Users can upload images directly through the platform or use a dedicated mobile app for field-based image capture. \\ \hline
+            
+            \textbf{Process} & 1. Image Preprocessing (resizing, normalization, etc.) \newline 2. Inception-V2-based disease classification \newline 3. U-Net-based disease lesion segmentation \newline 4. Disease severity estimation (optional) \newline 5. Generation of a comprehensive report with disease diagnosis, localization maps, and management recommendations. & The system processes images in real-time or near real-time, providing rapid results to users. Advanced image analysis techniques are employed for accurate localization and severity estimation. \\ \hline
+            
+            \textbf{Output} & A detailed report including: \newline - Disease type and confidence score \newline - Disease severity level (optional) \newline - Visual representation of the affected areas on the leaf \newline - Recommended management practices (e.g., specific fungicide treatments) & The report is presented in an easy-to-understand format, including images and clear explanations. Recommendations are tailored based on identified diseases and their severity. \\ \hline
+            
+            \textbf{Benefits} & - Early and accurate disease detection \newline - Reduced reliance on manual inspection \newline - Optimized disease management strategies \newline - Minimized crop losses \newline - Improved yield and quality \newline - Increased profitability for farmers & The system empowers farmers and agronomists with actionable insights for informed decision-making. It also contributes to sustainable agricultural practices by reducing pesticide use. \\ \hline
+            
+        \end{tabular}
+    }
+\end{table}
+
+
+
+\subsection{Component Diagram}
+\subsection{Deployment diagram}

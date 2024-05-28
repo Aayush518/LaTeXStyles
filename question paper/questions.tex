@@ -1,0 +1,67 @@
+\marksnotpoints
+\pointsdroppedatright
+\setlength{\rightpointsmargin}{25mm}
+\marginpointname{ \points}
+\pointformat{\bfseries\boldmath[\themarginpoints]}
+
+\begin{questions}
+
+\question[1] Explain Operating Sytem. What is the purpose of a system call in an operating system?\\ Explain.\droppoints
+\question[10] Explain Context Switching with an example. Consider the following set of processes with length of burst time given in millisecond.\droppoints
+\begin{center}
+    
+    \begin{tabular}{|c|c|c|} \hline 
+         Process&  Arrival Time& Burst Time\\ \hline 
+         P1&  0& 4\\ \hline 
+         P2&  2& 5\\ \hline 
+         P3&  4& 3\\ \hline 
+         P4&  6& 6\\ \hline 
+         P5&  8& 3\\ \hline
+    \end{tabular}
+
+\end{center}
+With the given information, draw the gantt Chart and calculate the average waiting time(AWT), average turnaround time (ATAT), CPU Utilization and throughput for the
+
+\begin{parts}
+
+\part Round Robin (RR) (Quantum Time=2)
+\part Highest Response Ratio Next (HRRN)
+
+\end{parts}
+
+\question[10] What are the necessary conditions for deadlock? Consider a system with five processes p0 through p4 and three resource types A, B and C. Resource A has 5 instances, B has 5 instances, and type C has 4 instances, Suppose at time $t=0$, following snapshot has been taken.
+
+        
+    \begin{center}
+        
+
+
+
+
+\begin{tabular}{|l|lll|lll|}
+\hline
+\multicolumn{1}{|c|}{\multirow{2}{*}{Process}} & \multicolumn{3}{l|}{Allocation}                     & \multicolumn{3}{c|}{\begin{tabular}[c]{@{}c@{}}Maximum\\ Claim\end{tabular}} \\ \cline{2-7} 
+\multicolumn{1}{|c|}{}                         & \multicolumn{1}{l|}{A} & \multicolumn{1}{l|}{B} & C & \multicolumn{1}{l|}{A}          & \multicolumn{1}{l|}{B}         & C         \\ \hline
+P0                                             & \multicolumn{1}{l|}{0} & \multicolumn{1}{l|}{3} & 1 & \multicolumn{1}{l|}{5}          & \multicolumn{1}{l|}{3}         & 2         \\ \hline
+P1                                             & \multicolumn{1}{l|}{3} & \multicolumn{1}{l|}{2} & 1 & \multicolumn{1}{l|}{2}          & \multicolumn{1}{l|}{0}         & 1         \\ \hline
+P2                                             & \multicolumn{1}{l|}{0} & \multicolumn{1}{l|}{4} & 5 & \multicolumn{1}{l|}{3}          & \multicolumn{1}{l|}{3}         & 5         \\ \hline
+P3                                             & \multicolumn{1}{l|}{2} & \multicolumn{1}{l|}{4} & 4 & \multicolumn{1}{l|}{2}          & \multicolumn{1}{l|}{5}         & 7         \\ \hline
+P4                                             & \multicolumn{1}{l|}{2} & \multicolumn{1}{l|}{3} & 4 & \multicolumn{1}{l|}{5}          & \multicolumn{1}{l|}{6}         & 7         \\ \hline
+\end{tabular}
+
+    \end{center}
+
+List the available number of resources be given by available vectors as (1,0,1). Is this system in safe state? If yes, the write the safe sequence.\droppoints
+
+\question[9] Write short notes on:
+
+\begin{enumerate}[label=\alph*)]
+    \item Protection Domain
+    \item Compaction and COalescing
+    \item Belady Anomaly
+\end{enumerate}
+
+\question[5] Solve: $\displaystyle\lim_{x \to 0} \left(x^2-5x+6\right)$
+    
+\end{questions}
+    
